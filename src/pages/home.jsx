@@ -51,7 +51,7 @@ export default function Main(){
         <SkeletonTheme baseColor="rgba(0,0,0,0.40)">
         <div className="block sm:flex space-y-4 sm:space-y-0 items-center flex-row gap-4">
             <div className="relative shrink-0 w-48 h-48">
-                <img src={`https://cdn.discordapp.com/avatars/${(user.discord_user) ? user.discord_user.id : "642752306441617417"}/${(user.discord_user) ? user.discord_user.avatar : "1"}.png?size=4096`} className={`h-48 w-48 rounded-full border-2 border-solid ${{idle: "bg-amber-400", dnd: "bg-rose-600", online: "bg-emerald-600", offline: "bg-gray-600"}[user.discord_status]} rounded-full border-4 border-solid ${{idle: "border-amber-500", dnd: "border-rose-600", online: "border-emerald-600", offline: "border-gray-600"}[user.discord_status]}`}/>
+                <img src={`https://cdn.discordapp.com/avatars/${(user.discord_user) ? user.discord_user.id : "1005112531431469136"}/${(user.discord_user) ? user.discord_user.avatar : "1"}.png?size=4096`} className={`h-48 w-48 rounded-full border-2 border-solid ${{idle: "bg-amber-400", dnd: "bg-rose-600", online: "bg-emerald-600", offline: "bg-gray-600"}[user.discord_status]} rounded-full border-4 border-solid ${{idle: "border-amber-500", dnd: "border-rose-600", online: "border-emerald-600", offline: "border-gray-600"}[user.discord_status]}`}/>
                 {(user.discord_status) ? (<div className={`absolute transition bottom-2 right-2 p-5 ${{idle: "bg-amber-400", dnd: "bg-rose-600", online: "bg-emerald-600", offline: "bg-gray-600"}[user.discord_status]} rounded-full border-4 border-solid ${{idle: "border-amber-200", dnd: "border-rose-300", online: "border-emerald-300", offline: "border-gray-300"}[user.discord_status]}`}></div>) : (<></>)}
             </div>
             <div>
@@ -275,24 +275,6 @@ export default function Main(){
                     <div>
                         <h1 className="font-sans text-white text-lg">YouTube</h1>
                         <h1 className="font-sans text-gray-200 text-base">{UserData.connections.youtube}</h1>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="zoom-in" className="block instagram hover:backdrop-blur-md w-full p-5 rounded-lg group">
-                <div className="flex items-center gap-4 w-full">
-                    <div className="w-16 h-16 flex items-center justify-center bg-[rgba(0,0,0,0.40)] rounded-lg border-2 border-solid border-white"><SiInstagram className="group-hover:scale-125 transition" color="WHITE" size="25px"/></div>
-                    <div>
-                        <h1 className="font-sans text-white text-lg">Instagram</h1>
-                        <h1 className="font-sans text-gray-200 text-base">{UserData.connections.instagram}</h1>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="zoom-in" className="block bg-gradient-to-r from-[#1DA1F2] to-[#02568a] hover:backdrop-blur-md w-full p-5 rounded-lg group">
-                <div className="flex items-center gap-4 w-full">
-                    <div className="w-16 h-16 flex items-center justify-center bg-[rgba(0,0,0,0.40)] rounded-lg border-2 border-solid border-white"><SiTwitter className="group-hover:scale-125 transition" color="WHITE" size="25px"/></div>
-                    <div>
-                        <h1 className="font-sans text-white text-lg">Twitter</h1>
-                        <h1 className="font-sans text-gray-200 text-base">{UserData.connections.twitter}</h1>
                     </div>
                 </div>
             </div>
